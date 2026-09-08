@@ -1,1 +1,191 @@
-/* Estilos del sistema de clientes */
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+    --color-principal: #3b82f6;
+    --color-principal-suave: #eff6ff;
+    --color-fondo: #f8fafc;
+    --color-blanco: #ffffff;
+    --color-texto: #334155;
+    --color-texto-suave: #64748b;
+    --color-borde: #e2e8f0;
+}
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado {
+    background-color: var(--color-blanco);
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.encabezado h1 {
+    color: var(--color-principal);
+    margin-bottom: 8px;
+}
+
+.encabezado p {
+    color: var(--color-texto-suave);
+    font-size: 16px;
+}
+
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+
+.navegacion {
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 16px 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: var(--color-principal);
+    background-color: var(--color-principal-suave);
+}
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+========================================= */
+
+.inicio {
+    min-height: 65vh;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.inicio h2 {
+    color: var(--color-texto);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.inicio > .contenedor > p {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    color: var(--color-texto-suave);
+    line-height: 1.7;
+}
+
+/* =========================================
+   OPCIONES
+========================================= */
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tarjeta {
+    width: 320px;
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta h3 {
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: var(--color-texto-suave);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+.pie-pagina {
+    background-color: var(--color-blanco);
+    color: var(--color-texto-suave);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--color-borde);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+}
