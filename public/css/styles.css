@@ -353,3 +353,88 @@ body {
     border: 1px solid #fecdd3;
     border-radius: 8px;
 }
+
+/* =========================================
+   LISTADO DE CLIENTES
+========================================= */
+
+.seccion-listado {
+    min-height: 65vh;
+    padding: 50px 20px;
+}
+
+.encabezado-listado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.encabezado-listado h2 {
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+.encabezado-listado p {
+    color: var(--color-texto-suave);
+}
+
+.acciones-listado {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    text-align: right;
+}
+
+.contenedor-tabla {
+    max-width: 1000px;
+    margin: auto;
+    overflow-x: auto;
+
+    background-color: var(--color-blanco);
+
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-clientes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-clientes thead {
+    background-color: var(--color-principal-suave);
+}
+
+.tabla-clientes th {
+    padding: 14px;
+
+    color: var(--color-texto);
+
+    text-align: left;
+
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.tabla-clientes td {
+    padding: 14px;
+
+    border-bottom: 1px solid var(--color-borde);
+
+    color: var(--color-texto-suave);
+}
+
+.tabla-clientes tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.tabla-clientes tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.sin-registros {
+    text-align: center;
+
+    padding: 30px !important;
+
+    color: var(--color-texto-suave);
+}

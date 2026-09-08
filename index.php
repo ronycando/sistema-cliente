@@ -6,29 +6,56 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sistema de Clientes</title>
 
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link
+        rel="stylesheet"
+        href="public/css/styles.css"
+    >
+
 </head>
 
 <body>
 
     <header class="encabezado">
+
         <div class="contenedor">
-            <h1>Sistema de Clientes</h1>
-            <p>Registro y administración de clientes</p>
+
+            <h1>
+                Sistema de Clientes
+            </h1>
+
+            <p>
+                Registro y administración de clientes
+            </p>
+
         </div>
+
     </header>
 
     <nav class="navegacion">
+
         <div class="contenedor menu">
-            <a href="index.php">Inicio</a>
-            <a href="views/clientes/crear.php">Registrar Cliente</a>
-            <a href="#">Consultar Clientes</a>
+
+            <a href="index.php">
+                Inicio
+            </a>
+
+            <a href="views/clientes/crear.php">
+                Registrar Cliente
+            </a>
+
+            <a href="views/clientes/listar.php">
+                Consultar Clientes
+            </a>
+
         </div>
+
     </nav>
 
     <main>
@@ -37,7 +64,9 @@
 
             <div class="contenedor">
 
-                <h2>Bienvenido al Sistema de Clientes</h2>
+                <h2>
+                    Bienvenido al Sistema de Clientes
+                </h2>
 
                 <p>
                     Esta aplicación permite registrar y consultar información
@@ -49,7 +78,9 @@
 
                     <article class="tarjeta">
 
-                        <h3>Registrar Cliente</h3>
+                        <h3>
+                            Registrar Cliente
+                        </h3>
 
                         <p>
                             Permite ingresar la información de un nuevo cliente
@@ -67,14 +98,19 @@
 
                     <article class="tarjeta">
 
-                        <h3>Consultar Clientes</h3>
+                        <h3>
+                            Consultar Clientes
+                        </h3>
 
                         <p>
                             Permite visualizar los clientes registrados
                             en el sistema.
                         </p>
 
-                        <a href="#" class="boton">
+                        <a
+                            href="views/clientes/listar.php"
+                            class="boton"
+                        >
                             Consultar
                         </a>
 
