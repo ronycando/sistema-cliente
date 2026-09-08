@@ -162,6 +162,98 @@ body {
 }
 
 /* =========================================
+   FORMULARIO
+========================================= */
+
+.seccion-formulario {
+    min-height: 65vh;
+    padding: 50px 20px;
+}
+
+.encabezado-formulario {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.encabezado-formulario h2 {
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+.encabezado-formulario p {
+    color: var(--color-texto-suave);
+}
+
+.formulario-cliente {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.10);
+}
+
+/* =========================================
+   ACCIONES DEL FORMULARIO
+========================================= */
+
+.acciones-formulario {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.formulario-cliente button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton-secundario {
+    display: inline-block;
+    padding: 11px 22px;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.boton-secundario:hover {
+    background-color: var(--color-borde);
+}
+
+/* =========================================
    PIE DE PÁGINA
 ========================================= */
 
@@ -186,6 +278,20 @@ body {
 
     .tarjeta {
         width: 100%;
+    }
+
+    .formulario-cliente {
+        padding: 25px 20px;
+    }
+
+    .acciones-formulario {
+        flex-direction: column-reverse;
+    }
+
+    .acciones-formulario .boton,
+    .acciones-formulario .boton-secundario {
+        width: 100%;
+        text-align: center;
     }
 
 }

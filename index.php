@@ -1,5 +1,5 @@
 <?php
-// Sistema de Clientes
+// Página principal del Sistema de Clientes
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
     <nav class="navegacion">
         <div class="contenedor menu">
             <a href="index.php">Inicio</a>
-            <a href="#">Registrar Cliente</a>
+            <a href="views/clientes/crear.php">Registrar Cliente</a>
             <a href="#">Consultar Clientes</a>
         </div>
     </nav>
@@ -48,6 +48,7 @@
                 <div class="opciones">
 
                     <article class="tarjeta">
+
                         <h3>Registrar Cliente</h3>
 
                         <p>
@@ -55,12 +56,17 @@
                             en el sistema.
                         </p>
 
-                        <a href="#" class="boton">
+                        <a
+                            href="views/clientes/crear.php"
+                            class="boton"
+                        >
                             Registrar
                         </a>
+
                     </article>
 
                     <article class="tarjeta">
+
                         <h3>Consultar Clientes</h3>
 
                         <p>
@@ -71,6 +77,7 @@
                         <a href="#" class="boton">
                             Consultar
                         </a>
+
                     </article>
 
                 </div>
@@ -82,9 +89,11 @@
     </main>
 
     <footer class="pie-pagina">
+
         <p>
             &copy; 2026 Sistema de Clientes
         </p>
+
     </footer>
 
 </body>
