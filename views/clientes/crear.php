@@ -1,3 +1,11 @@
+<?php
+
+$mensaje = isset($_GET["mensaje"])
+    ? $_GET["mensaje"]
+    : "";
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,7 +15,10 @@
 
     <title>Registrar Cliente | Sistema de Clientes</title>
 
-    <link rel="stylesheet" href="../../public/css/styles.css">
+    <link
+        rel="stylesheet"
+        href="../../public/css/styles.css"
+    >
 </head>
 
 <body>
@@ -38,7 +49,7 @@
                 Registrar Cliente
             </a>
 
-            <a href="#">
+            <a href="listar.php">
                 Consultar Clientes
             </a>
 
@@ -65,6 +76,30 @@
 
                 </div>
 
+                <?php if ($mensaje == "ok") { ?>
+
+                    <div class="mensaje-exito">
+                        Cliente registrado correctamente.
+                    </div>
+
+                <?php } ?>
+
+                <?php if ($mensaje == "error") { ?>
+
+                    <div class="mensaje-error-servidor">
+                        Ocurrió un error al registrar el cliente.
+                    </div>
+
+                <?php } ?>
+
+                <?php if ($mensaje == "campos") { ?>
+
+                    <div class="mensaje-error-servidor">
+                        Todos los campos son obligatorios.
+                    </div>
+
+                <?php } ?>
+
                 <div
                     id="mensajeError"
                     class="mensaje-error"
@@ -74,7 +109,7 @@
                     id="formularioCliente"
                     class="formulario-cliente"
                     method="POST"
-                    action="#"
+                    action="../../controllers/ClienteController.php?accion=registrar"
                     novalidate
                 >
 
