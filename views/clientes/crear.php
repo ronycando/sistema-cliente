@@ -65,10 +65,17 @@
 
                 </div>
 
+                <div
+                    id="mensajeError"
+                    class="mensaje-error"
+                ></div>
+
                 <form
+                    id="formularioCliente"
                     class="formulario-cliente"
                     method="POST"
                     action="#"
+                    novalidate
                 >
 
                     <div class="campo">
@@ -96,6 +103,7 @@
                             type="text"
                             id="cedula"
                             name="cedula"
+                            maxlength="10"
                             placeholder="Ingrese la cédula"
                         >
 
@@ -126,6 +134,7 @@
                             type="text"
                             id="telefono"
                             name="telefono"
+                            maxlength="10"
                             placeholder="Ingrese el teléfono"
                         >
 
@@ -141,6 +150,8 @@
                             type="number"
                             id="edad"
                             name="edad"
+                            min="18"
+                            max="100"
                             placeholder="Ingrese la edad"
                         >
 
@@ -179,6 +190,8 @@
         </p>
 
     </footer>
+
+    <script src="../../public/js/validaciones.js"></script>
 
 </body>
 

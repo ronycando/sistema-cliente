@@ -295,3 +295,33 @@ body {
     }
 
 }
+
+/* =========================================
+   MENSAJES DE VALIDACIÓN
+========================================= */
+
+.mensaje-error {
+    display: none;
+
+    max-width: 650px;
+
+    margin: 0 auto 20px;
+
+    padding: 15px 20px;
+
+    background-color: #fff1f2;
+
+    color: #be123c;
+
+    border: 1px solid #fecdd3;
+
+    border-radius: 8px;
+}
+
+.mensaje-error ul {
+    padding-left: 20px;
+}
+
+.mensaje-error li {
+    margin: 5px 0;
+}
